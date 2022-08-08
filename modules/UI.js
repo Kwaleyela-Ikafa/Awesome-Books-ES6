@@ -1,12 +1,15 @@
-import { BookData, button, titleInput, authorInput, Storage} from './storage.js';
+/* eslint-disable no-unused-vars */
+/* eslint-disable class-methods-use-this */
+import {
+  BookData, button, titleInput, authorInput, Storage,
+} from './storage.js';
 
 function Book(title, author) {
-    this.title = title;
-    this.author = author;
-  }
-  
-  class UI {
-  constructor() { }
+  this.title = title;
+  this.author = author;
+}
+
+class UI {
   addBookToUI(newBook) {
     BookData.innerHTML += `
       <li class='book book-item'>
@@ -18,14 +21,16 @@ function Book(title, author) {
       </li>
     `;
   }
+
   clearInputs(element1, element2) {
     element1.value = '';
     element2.value = '';
   }
+
   removeBookFromUI(target) {
     target.parentElement.remove();
   }
-} 
+}
 
 const ui = new UI();
 

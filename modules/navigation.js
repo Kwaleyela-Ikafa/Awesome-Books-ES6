@@ -1,6 +1,9 @@
-import { BookData, button, titleInput, authorInput, Storage} from './storage.js';
-import { Book, UI, ui } from "./UI.js";
-import {addBook, removeBook} from './addBook.js'
+/* eslint-disable no-unused-vars */
+import {
+  BookData, button, titleInput, authorInput, Storage,
+} from './storage.js';
+import { Book, UI, ui } from './UI.js';
+import { addBook, removeBook } from './addBook.js';
 
 const addNew = document.querySelector('.add-new');
 const form = document.querySelector('.form');
@@ -33,4 +36,6 @@ contact.addEventListener('click', () => {
 window.onload;
 listDiv.style.display = 'unset';
 
-export { addNew, form, list, listDiv, contact, contactDiv};
+export {
+  addNew, form, list, listDiv, contact, contactDiv,
+};

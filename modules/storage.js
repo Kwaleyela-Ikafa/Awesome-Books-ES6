@@ -35,4 +35,6 @@ class Storage {
   }
 }
 
-export { BookData, button, titleInput, authorInput, Storage  };
+export {
+  BookData, button, titleInput, authorInput, Storage,
+};

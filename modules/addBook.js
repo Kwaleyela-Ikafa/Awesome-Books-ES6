@@ -1,5 +1,7 @@
-import { BookData, button, titleInput, authorInput, Storage} from './storage.js';
-import { Book, UI, ui } from "./UI.js";
+import {
+  BookData, button, titleInput, authorInput, Storage,
+} from './storage.js';
+import { Book, ui } from './UI.js';
 
 function addBook(e) {
   const title = titleInput.value;
@@ -29,4 +31,4 @@ document.addEventListener('DOMContentLoaded', () => {
   allBooks.forEach((book) => ui.addBookToUI(book));
 });
 
-export {addBook, removeBook};
+export { addBook, removeBook };
