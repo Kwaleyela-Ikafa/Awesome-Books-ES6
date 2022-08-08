@@ -3,7 +3,7 @@ import {
 } from './storage.js';
 import { Book, ui } from './UI.js';
 
-function addBook(e) {
+const addBook = (e) => {
   const title = titleInput.value;
   const author = authorInput.value;
 
@@ -15,14 +15,14 @@ function addBook(e) {
   ui.clearInputs(titleInput, authorInput);
 
   e.preventDefault();
-}
+};
 
-function removeBook(e) {
+const removeBook = (e) => {
   if (e.target.className === 'remove remove-btn btn') {
     ui.removeBookFromUI(e.target);
     Storage.removeFromBooks(e.target);
   }
-}
+};
 
 button.addEventListener('click', addBook);
 BookData.addEventListener('click', removeBook);

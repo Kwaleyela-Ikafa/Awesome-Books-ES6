@@ -1,10 +1,3 @@
-/* eslint-disable no-unused-vars */
-import {
-  BookData, button, titleInput, authorInput, Storage,
-} from './storage.js';
-import { Book, UI, ui } from './UI.js';
-import { addBook, removeBook } from './addBook.js';
-
 const addNew = document.querySelector('.add-new');
 const form = document.querySelector('.form');
 
